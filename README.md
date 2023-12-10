@@ -1,31 +1,12 @@
-# React + TypeScript + Vite
+# MOEX HACK 
+# Приложение AlGO - frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Репозиторий хранит Frontend для приложения ALGO. Приложение рассчитано на трейдеров и инвесторов MOEX и позволяет
+создавать персональный стратегии для пользователей.
 
-Currently, two official plugins are available:
+Приложение создано с помощью технологий: React, TypeScript, Vite, ReactRouter, Plotly.js 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# moex-hack
+npm run dev - Запустить приложение в режиме разработчика
+npm run build - Сбилдить приложение для использования
+```
