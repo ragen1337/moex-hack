@@ -1,0 +1,69 @@
+.modalWrapper {
+  display: grid;
+  row-gap: 30px
+}
+
+.variants {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  align-content: center;
+  gap: 20px;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.cardWrapper {
+  border: 1px grey solid;
+  cursor: pointer;
+
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.cardWrapper.blocked {
+  opacity: 0.4;
+}
+
+.cardWrapper:not(.blocked):hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.imageWrapper > svg {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.variant {
+  display: grid;
+  justify-items: center;
+  row-gap: 10px;
+}
+
+@media screen and (max-width: 735px) {
+  .dialog {
+    width: 100vw;
+    height: auto;
+  }
+
+  .variants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: unset;
+  }
+
+  .cardWrapper {
+    width: 210px;
+    margin: 10px;
+  }
+
+  .stepsWrapper {
+    display: none;
+  }
+
+  .modalWrapper h1 {
+    font-size: 20px;
+  }
+}

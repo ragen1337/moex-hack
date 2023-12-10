@@ -1,0 +1,21 @@
+.wrapper {
+  position: relative;
+  z-index: 0;
+}
+
+.wrapper > :global(#plot) {
+  background-color: red;
+  max-width: 100%;
+}
+
+.progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: white;
+  display: grid;
+  place-content: center;
+  z-index: 10;
+}

@@ -1,0 +1,53 @@
+.form {
+  display: grid;
+  justify-content: start;
+  column-gap: 50px;
+  grid-template-columns: 300px 300px;
+  row-gap: 30px;
+  justify-items: start;
+}
+
+.miniForm {
+  width: 100%;
+}
+
+.miniForm > * {
+  width: 100%;
+}
+
+.backtestText {
+  margin-top: 30px;
+  max-width: 700px;
+}
+
+.up {
+  color: green;
+}
+
+.down {
+  color: red;
+}
+
+.spinnerWrapper {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.plot {
+  margin-top: 40px;
+  background-color: red;
+}
+
+@media screen and (max-width: 720px) {
+  .wrapper {
+    width: calc(100vw - 20px);
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+  }
+}

@@ -1,0 +1,42 @@
+.card {
+  cursor: pointer;
+
+  transform: scale(1);
+  transition: transform 300ms;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 300ms;
+}
+
+.card :global(.p-card-body) {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.card :global(.p-card-content) {
+  height: 100%;
+  padding: unset;
+}
+
+.cardContent {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+}
+
+.cardContent:has(> *:nth-child(2)) {
+  align-content: space-between;
+}
+
+.cardContent > h3 {
+  margin: unset;
+}

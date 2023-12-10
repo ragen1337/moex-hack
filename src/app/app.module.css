@@ -1,0 +1,22 @@
+.appWrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.pageWrapper {
+  background-color: var(--surface-ground);
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+
+  transition: 250ms;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+}
+

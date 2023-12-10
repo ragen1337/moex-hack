@@ -1,0 +1,18 @@
+.strategiesCards {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.strategiesCards > * {
+  width: 250px;
+  height: 163px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 670px) {
+  .strategiesCards {
+    justify-content: center;
+  }
+}

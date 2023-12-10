@@ -1,0 +1,8 @@
+.wrapper {
+  display: grid;
+  row-gap: 5px;
+}
+
+.name {
+  margin: 0;
+}

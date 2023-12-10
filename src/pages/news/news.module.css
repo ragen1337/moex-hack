@@ -1,0 +1,40 @@
+.card {
+  max-height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+
+.card :global(.p-card-body) {
+  height: 100%;
+}
+
+.card :global(.p-card-content) {
+  height: 100%;
+}
+
+.item {
+  margin-top: 20px;
+}
+
+.wrapper {
+  display: grid;
+  row-gap: 20px;
+  grid-template-rows: auto 1fr;
+  height: calc(100vh - 100px);
+}
+
+.newsContent {
+  display: grid;
+  row-gap: 10px;
+}
+
+.spinnerWrapper {
+  display: grid;
+  place-content: center;
+  height: 100%;
+}
+
+@media screen and (max-width: 670px) {
+  .wrapper {
+    width: calc(100vw - 20px);
+  }
+}

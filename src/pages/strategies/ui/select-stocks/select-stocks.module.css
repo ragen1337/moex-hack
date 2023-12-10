@@ -1,0 +1,56 @@
+.wrapper {
+  display: grid;
+  justify-content: end;
+  justify-items: end;
+}
+
+.stocks {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  justify-items: center;
+  column-gap: 20px;
+  padding: 30px 0;
+}
+
+.stock {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  row-gap: 10px;
+}
+
+.stock:hover {
+  background: #f3f4f6;
+}
+
+.stock.selected {
+  outline: 2px #6366F1 solid;
+  background: #f3f4f6;
+}
+
+.stock > img {
+  width: 100px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 735px) {
+  .dialog {
+    width: 100vw;
+    height: auto;
+  }
+
+  .stocks {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .stock {
+    margin: 10px;
+    width: auto;
+  }
+}

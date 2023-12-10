@@ -1,0 +1,33 @@
+.stocks {
+  display: grid;
+  row-gap: 20px;
+  justify-content: start;
+  justify-items: start;
+  grid-template-columns: 100%;
+}
+
+.dropdownWrapper {
+  width: 250px;
+}
+
+.dropdownWrapper > * {
+  width: 100%;
+}
+
+.chartWrapper {
+  display: grid;
+  justify-content: start;
+  width: 100%;
+  grid-template-columns: 100%;
+}
+
+.chartCard{
+  width: 100%;
+  min-height: 500px;
+}
+
+@media screen and (max-width: 670px) {
+  .stocks {
+    width: calc(100vw - 20px);
+  }
+}
